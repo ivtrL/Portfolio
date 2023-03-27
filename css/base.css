@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import "./animations.css";
+@import "./profilestyle.css";
+@import "./navstyle.css";
+@import "./homestyle.css";
+@import "./headerstyle.css";
+
+@media screen and (min-width: 580px) {
+    :root {
+      --normal-font-size: 1rem;
+    }
+}
+
+:root {
+    --first-color:  greenyellow;
+    --title-color:  hsl(228, 12%, 15%);
+    --text-color:  white;
+    --body-color:  hsl(228, 100%, 99%);
+    --header-color: rgba(255, 255, 255, 0.95);
+    --container-color:  rgba(04, 04, 06, 0.4);
+    --body-font:  "Poppins", sans-serif;
+    --normal-font-size:  0.938rem;
+    --shadow-color: rgba(24, 64, 226, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--shadow-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: greenyellow;
+	border-radius: 8px;
+}
+
+
+body {
+    background: url(https://i0.wp.com/abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled-1.jpg?fit=2560%2C1440&ssl=1) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}

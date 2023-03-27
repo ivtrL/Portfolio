@@ -1,0 +1,77 @@
+.h-title, .d-container {
+  background-color: var(--container-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px var(--shadow-color);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  position: relative;
+  color: white;
+  border: 3px solid #f1f1f1;
+}
+
+.heading {
+  margin: 40px
+}
+
+.h-title-special {
+  color: greenyellow;
+}
+
+.h-description {
+  line-height: 1.25;
+}
+
+.h-description::after {
+  color: greenyellow;
+  content: "|";
+  margin: 8px;
+  animation: blinking 1s infinite;
+}
+
+@media screen and (min-width: 280px) and (max-width: 360px) {
+  .h-title {
+    max-width: 550px;
+    padding: 5px 4px;
+    margin: 20px auto;
+    top: 10vh;
+    transition: .4s;
+    animation: fadeInDown 1s;
+  }
+  
+  .d-container {
+    max-width: 500px;
+    padding: 10px 8px;
+    margin: 20px auto;
+    top: 10vh;
+    transition: .4s;
+    animation: fadeInDown 1s;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 361px) {
+  .h-title {
+    max-width: 360px;
+    padding: 30px 20px;
+    margin: 20px auto;
+    top: 10vh;
+    transition: .4s;
+    animation: fadeInDown 1s;
+  }
+  
+  .d-container {
+    max-width: 360px;
+    padding: 20px 15px;
+    margin: 20px auto;
+    top: 10vh;
+    transition: .4s;
+    animation: fadeInDown 1s;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+}
