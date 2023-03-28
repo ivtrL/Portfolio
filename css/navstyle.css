@@ -42,6 +42,7 @@
 }
 
 .nav_bottom {
+    max-width: 440px;
     position: fixed;
     bottom: 2rem;
     background-color: var(--container-color);
