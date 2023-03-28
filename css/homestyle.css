@@ -7,13 +7,26 @@
   justify-content: center;
   text-align: center;
   display: flex;
-  position: relative;
+  position: static;
   color: white;
   border: 3px solid #f1f1f1;
 }
 
-.heading {
-  margin: 40px
+.home {
+  column-gap: 30px;
+  top: 15vh;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  margin: 40px auto;
+  height: 50vh;
+}
+
+.h-title {
+  right: 1rem;
 }
 
 .h-title-special {
