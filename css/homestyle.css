@@ -17,7 +17,6 @@
   top: 15vh;
   position: relative;
   align-items: center;
-  justify-content: space-between;
   text-align: center;
   display: flex;
   width: 100%;
@@ -45,6 +44,11 @@
 }
 
 @media screen and (min-width: 280px) and (max-width: 360px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
   .h-title {
     max-width: 550px;
     padding: 5px 4px;
@@ -66,7 +70,38 @@
   }
 }
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 361px) and (max-width: 710px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .h-title {
+    max-width: 360px;
+    padding: 30px 20px;
+    margin: 20px auto;
+    top: 10vh;
+    transition: .4s;
+    animation: fadeInDown 1s;
+  }
+  
+  .d-container {
+    max-width: 360px;
+    padding: 20px 15px;
+    margin: 20px auto;
+    top: 10vh;
+    transition: .4s;
+    animation: fadeInDown 1s;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 711px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
   .h-title {
     max-width: 360px;
     padding: 30px 20px;
