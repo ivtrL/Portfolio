@@ -77,9 +77,7 @@
         height: 84px;
         padding: 30px 40px;
         border-radius: 1rem;
-      }
-    
-        
+    }    
 }
 
 @media screen and (max-width: 766px) {
@@ -94,17 +92,7 @@
       border-radius: 2.25rem;
     }
 
-    .nav_bottom {
-        column-gap: 36px;
-        width: 50%;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 40px;
-        border-radius: 2.25rem;
-      }
-
-    .nav-nome,
-    .logo-nome {
+    .nav-nome, .logo-nome {
         display: none;
     }
 }   
@@ -120,20 +108,8 @@
         padding: 30px 40px;
         border-radius: 2.25rem;
     }
-    .nav_bottom {
-        position: fixed;
-        bottom: 2rem;
-        column-gap: 20px;
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 40px;
-        border-radius: 2.25rem;
-    }
-
-      .nav-nome,
-      .logo-nome {
-          display: none;
+    .nav-nome, .logo-nome {
+        display: none;
     }
 }
 
@@ -150,21 +126,7 @@
         padding: 15px 10px;
         border-radius: 2.25rem;
     }
-    .nav_bottom {
-        position: fixed;
-        bottom: 1.2rem;
-        column-gap: 20px;
-        width: 80%;
-        max-width: 40vh;
-        height: 60px;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 10px;
-        border-radius: 2.25rem;
-    }
-
-    .nav-nome,
-    .logo-nome {
+    .nav-nome, .logo-nome {
         display: none;
     }
 }
