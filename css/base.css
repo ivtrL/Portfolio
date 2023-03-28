@@ -3,7 +3,6 @@
 @import "./profilestyle.css";
 @import "./navstyle.css";
 @import "./homestyle.css";
-@import "./headerstyle.css";
 
 @media screen and (min-width: 580px) {
     :root {
