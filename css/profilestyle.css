@@ -75,7 +75,7 @@
 @media screen and (min-width: 280px) and (max-width: 360px) {
     .profile-container img {
         border-radius: 10px;
-        margin: 30px 5px;
+        margin: 10px 5px;
     }
     .contacts {
         margin: 5px;

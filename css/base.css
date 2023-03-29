@@ -103,3 +103,7 @@ body {
 a {
     text-decoration: none;
 }
+
+.animate {
+    animation: fadeInDown 2s;
+}
