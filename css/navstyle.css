@@ -1,9 +1,10 @@
 .nav_link {
+    position: relative;
     color: var(--text-color);
     font-weight: 500;
     margin-right: 20px;
     text-decoration: none;
-    transition: .3s;
+    transition: all .5s;
     opacity: 1;
     animation: fadeInLeft 1s 1.2s;
 }
@@ -77,6 +78,25 @@
         height: 84px;
         padding: 30px 40px;
         border-radius: 1rem;
+    }
+    
+    .nav_link::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: greenyellow;
+        height: 1px;
+        transition: all .5s;
+    }
+    
+    .nav_link:hover:after {
+        width: 100%;
+        transition: all .5s;
     }    
 }
 
