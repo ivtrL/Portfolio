@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import styles from '@/styles/HomeStyle.module.css'
+import styles from '../styles/HomeStyle.module.css'
 import Typed from 'react-typed'
 
 
