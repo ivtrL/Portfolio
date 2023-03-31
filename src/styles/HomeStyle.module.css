@@ -1,4 +1,45 @@
-.h-title, .d-container {
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+@keyframes blinking {
+  0%,100% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translate3D(-50px, 0, 0);
+  }
+  100% {
+     opacity: 1;
+     transform: translate3D(0, 0, 0);
+  }
+}
+
+@keyframes horizontal-scale {
+  0% {
+      transform: scale(0, 0.025);
+  }
+
+  50% {
+      transform: scale(1, 0.025);
+  }
+}
+
+.h_title, .d_container {
   max-width: 360px;
   background-color: var(--container-color);
   backdrop-filter: blur(10px);
@@ -26,19 +67,19 @@
   animation: fadeInDown 1s;
 }
 
-.h-title {
+.h_title {
   right: 1rem;
 }
 
-.h-title-special {
+.h_title_special {
   color: greenyellow;
 }
 
-.h-description {
+.h_description {
   line-height: 1.25;
 }
 
-.h-description::after {
+.h_description::after {
   color: greenyellow;
   content: "|";
   margin: 8px;
@@ -51,7 +92,7 @@
     justify-content: center;
   }
 
-  .h-title {
+  .h_title {
     flex-direction: column;
     padding: 20px;
     margin: 20px auto;
@@ -59,7 +100,7 @@
     transition: .4s;
   }
   
-  .d-container {
+  .d_container {
     padding: 10px 8px;
     margin: 20px auto;
     top: 10vh;
@@ -74,14 +115,14 @@
     flex-direction: column-reverse;
     justify-content: center;
   }
-  .h-title {
+  .h_title {
     padding: 30px 20px;
     margin: 20px auto;
     top: 10vh;
     transition: .4s;
   }
   
-  .d-container {
+  .d_container {
     padding: 20px 15px;
     margin: 20px auto;
     top: 10vh;
@@ -97,14 +138,14 @@
   .home {
     justify-content: space-between;
   }
-  .h-title {
+  .h_title {
     padding: 30px 20px;
     margin: 20px auto;
     top: 10vh;
     transition: .4s;
   }
   
-  .d-container {
+  .d_container {
     padding: 20px 15px;
     margin: 20px auto;
     top: 10vh;
