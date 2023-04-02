@@ -78,13 +78,13 @@
 .h_description {
   line-height: 1.25;
 }
-
+/* 
 .h_description::after {
   color: greenyellow;
   content: "|";
   margin: 8px;
   animation: blinking 1s infinite;
-}
+} */
 
 @media screen and (min-width: 280px) and (max-width: 360px) {
   .home {
