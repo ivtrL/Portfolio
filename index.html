@@ -1,98 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Portfolio</title>
-      <link href="./css/base.css" rel="stylesheet">
-      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css?_cacheOverride=1678828602070" rel="stylesheet">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css?_cacheOverride=1678828602070"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="./js/main.js"></script>
+  </head>
   <body>
-    <div class="navegação">
-      <div class="logo">
-        <span class="logo-nome">Isaac Vitorino</span>
+    <header>
+      <div class="navbar contentSpacing">
+        <span class="nav-logo">ISAAC VITORINO</span>
+        <nav class="nav-items">
+          <a href="#home" class="nav-link">
+            <span class="nav-name">Início</span>
+          </a>
+          <a href="#about" class="nav-link">
+            <span class="nav-name">Sobre Mim</span>
+          </a>
+          <a href="#knowledge" class="nav-link">
+            <span class="nav-name">Conhecimentos</span>
+          </a>
+          <a href="#projects" class="nav-link">
+            <span class="nav-name">Projetos</span>
+          </a>
+        </nav>
       </div>
-  
-      <nav class="nav-items">
-        <a href="#home" class="nav_link nav_link-off">
-            <i class="bx bx-home-alt-2"></i>
-            <span class="nav-nome"> Início</span>
-        </a>
-        <a href="#profile" class="nav_link nav_link-off">
-          <i class="bx bx-user"></i>
-          <span class="nav-nome"> Meu Perfil</span>
-        </a>
-
-        <a href="#" class="nav_link nav_link-off">
-          <i class="bx bx-notepad"></i>
-          <span class="nav-nome"> Projetos</span>
-        </a>
-
-        <a href="#" class="nav_link nav_link-off">
-          <i class="bx bxs-grid"></i>
-          <span class="nav-nome"> Habilidades</span>
-        </a>
-      </nav> 
-    </div>
+    </header>
     <main>
       <section id="home">
-        <div class="animate home">
-          <div class="d-container">
-            <p class="h-description">
-              Aqui você tem informações sobre 
-              todos os projetos que eu trabalhei 
-              e as minhas habilidades.
-            </p>
-          </div>
-          <h1 class="h-title">BEM-VINDO AO<span class="h-title-special"> PORTFÓLIO</span></h1>
+        <img class="coding-lang css" src="img/css.png" alt="css.png" />
+        <img class="coding-lang html" src="img/html.png" alt="html.png" />
+        <img
+          class="coding-guy"
+          src="https://ouch-cdn2.icons8.com/vZD-nOO0-rKGloPBW0WjLQF-i8hfkpa7QWY_3L4YTGA/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzAx/L2Y1ZWI5ZGEwLTM3/ZWMtNDUxYy1iODNl/LTVjMzc1NGU5NjQx/NC5zdmc.png"
+          alt="coding-guy.png"
+        />
+
+        <div class="home-container contentSpacing">
+          <h1>BEM VINDO AO MEU PORTFÓLIO!</h1>
         </div>
       </section>
-      <section id="profile">
-        <div class="animate profile">
-          <div class="profile-container">
-            <img src="/img/x.jpg" alt="#"/>
-            <span class="profile-description"></span>
-            <div class="contacts">
-              <a href="#" class="ctt-email">
-                <i class="bx bx-envelope"></i>
-              </a>
-              <a href="#" class="ctt-instagram">
-                <i class="bx bxl-instagram"></i>
-              </a>
-              <a href="#" class="ctt-facebook">
-                <i class="bx bxl-facebook"></i>
-              </a>
-              <a href="#" class="ctt-github">
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="#" class="ctt-whatsapp">
-                <i class="bx bxl-whatsapp"></i>
-              </a>
-              <a href="#" class="ctt-linkedin">
-                <i class="bx bxl-linkedin"></i>
-              </a>
-            </div>
-          </div>
+      <section id="about">
+        <div class="about-container contentSpacing">
+          <h1 class="about-title">Este Sou EU!</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            ducimus tempore dicta neque est, ab aperiam sed eveniet ullam
+            veritatis similique? Suscipit reprehenderit tempore asperiores
+            dolorum maiores officia! Saepe, eius.
+          </p>
+        </div>
+      </section>
+      <section id="knowledge">
+        <div class="knowledge-container contentSpacing">
+          <h1>Conhecimentos</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            quaerat laboriosam tempore, doloremque esse ipsa velit cupiditate
+            voluptate earum quasi neque voluptas natus quis, minima provident.
+            Animi tenetur vel officiis.
+          </p>
         </div>
       </section>
       <section id="projects">
-        <div class="projects">
-          <div class="projects-container">
-            <h1 class="projects-h">
-              Meus Projetos:
-            </h1>
-            <p class="projects-p">
-              A maioria dos meus projetos, se não todos,
-              que trabalhei e ou estou trabalhando estão
-              no repositório do meu github, incluindo este
-              próprio site. Busco sempre criar aplicações 
-              que são capazes de resolver problemas do 
-              cotidiano e ou da área profissional.
-            </p>
-          </div>
+        <div class="projects-container contentSpacing">
+          <h1>projects</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+            iste perspiciatis dolore voluptates repellendus consectetur dolores
+            odio adipisci illum maxime. Id obcaecati rerum quisquam qui soluta
+            alias labore dolore minus.
+          </p>
         </div>
       </section>
     </main>
-    <script type="module" src="./js/main.js"></script>
+    <footer>
+      <div class="footer-container contentSpacing">footer</div>
+    </footer>
   </body>
 </html>

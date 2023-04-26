@@ -1,23 +1,36 @@
-import { typeWriter } from "./typeWriter.js";
-import { navActiveLink } from "./navActiveLinks.js";
-import { navChangePosition } from "./navbarChanges.js";
-import { animationOnScreen } from "./animationsWhenOnScreen.js";
+function activeNavLink(section) {
+  const targetLine = scrollY + innerHeight / 2;
+  const sectionId = section.getAttribute("id");
+  const navElement = document.querySelector(`.nav-items a[href*=${sectionId}]`);
+  const sectionRange =
+    targetLine >= section.offsetTop &&
+    !(section.offsetTop + section.offsetHeight <= targetLine);
+  navElement.classList.remove("active");
 
-setTimeout(() => {
-    const navAnimation = document.querySelectorAll (".nav_link");
-    navAnimation.forEach(l => l.classList.remove('nav_link-off'));
-  }, 2200);
-  
-setTimeout(typeWriter(document.querySelector(".h-description")), 3000);
+  if (sectionRange) {
+    navElement.classList.add("active");
+  }
+}
 
-navActiveLink();
-
-navChangePosition();
-
-const objects = document.querySelectorAll('.animate');
-setTimeout(() => {
-  objects.forEach(object => {
-    object.classList.remove('animate');
+window.addEventListener("load", () => {
+  [home, about, projects, knowledge].forEach((section) => {
+    activeNavLink(section);
   });
-  animationOnScreen(objects);
-}, 3000);
+});
+
+window.addEventListener("scroll", () => {
+  [home, about, projects, knowledge].forEach((section) => {
+    activeNavLink(section);
+  });
+});
+
+ScrollReveal({
+  origin: "bottom",
+  distance: "50px",
+  duration: 1250,
+}).reveal(
+  `#home, 
+    #about,
+    #projects,
+    #knowledge`
+);
