@@ -1,0 +1,47 @@
+/* Home Section */
+
+#home {
+  display: flex;
+  align-items: flex-start;
+}
+
+.home-container {
+  display: inherit;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-container .coding-guy {
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 30vh;
+  animation: floating 3s infinite;
+}
+
+.home-container .coding-lang {
+  position: absolute;
+  scale: 40%;
+  z-index: -1;
+}
+
+.home-container .coding-lang.css {
+  right: 415px;
+  top: 10px;
+  animation: floatingCSS 15s infinite;
+}
+
+.home-container .coding-lang.html {
+  right: 10px;
+  top: 10px;
+  animation: floatingHTML 15s infinite;
+}
+
+.home-container .coding-lang.js {
+  right: 210px;
+  top: 10px;
+  animation: floatingJS 15s infinite;
+}

@@ -27,10 +27,10 @@ window.addEventListener("scroll", () => {
 ScrollReveal({
   origin: "bottom",
   distance: "50px",
-  duration: 1250,
+  duration: 2000,
 }).reveal(
   `#home, 
-    #about,
-    #projects,
-    #knowledge`
+  #about,
+  #projects,
+  #knowledge`
 );
