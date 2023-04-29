@@ -29,8 +29,7 @@ ScrollReveal({
   distance: "50px",
   duration: 2000,
 }).reveal(
-  `#home, 
-  #about,
+  ` #about,
   #projects,
   #knowledge`
 );
