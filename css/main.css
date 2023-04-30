@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap");
 @import "animations.css";
 @import "navbar.css";
-@import "homeSection.css";
+@import "homeContainer.css";
 @import "homeStart.css";
 
 /* Content Organization */
@@ -36,11 +36,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   color: black;
   font-size: var(--primary-font-size);
   scroll-behavior: smooth;
   transition: 0.2s;
+  overflow-x: hidden;
 }
 
 .contentSpacing {
@@ -53,10 +54,12 @@ a {
 }
 
 section {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
-  height: calc(100vh + 100px);
+  min-height: calc(100vh + 100px);
+  height: fit-content;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

@@ -4,9 +4,9 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: var(--header-color);
-  box-shadow: var(--box-shadow-color) 0px 5px 15px;
+  background-color: rgba(0, 0, 0, 0);
   z-index: 9999;
+  transition: 0.45s ease;
 }
 
 .navbar {
@@ -19,10 +19,12 @@ header {
 .nav-items {
   display: flex;
   gap: 1rem;
+  /* border-bottom: 1px solid var(--primary-color); */
 }
 
 .nav-logo {
   color: var(--primary-color);
+  pointer-events: none;
 }
 
 .nav-link {
