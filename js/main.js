@@ -97,11 +97,25 @@ window.addEventListener("mousemove", (e) => {
   parallax(e.clientX);
 });
 
-if (window.innerWidth >= 725) {
-  main.style.maxHeight = `${window.innerWidth * 0.6}px`;
-} else {
-  main.style.maxHeight = `${window.innerWidth * 1.6}px`;
+function handleResize() {
+  if (
+    window.innerWidth >= 725 &&
+    window.innerWidth / window.innerHeight <= 16 / 9
+  ) {
+    main.style.maxHeight = `${window.innerWidth * 0.6}px`;
+  } else if (
+    window.innerWidth < 725 &&
+    window.innerWidth / window.innerHeight <= 16 / 9
+  ) {
+    main.style.maxHeight = `${window.innerWidth * 1.6}px`;
+  } else {
+    main.style.maxHeight = `1000px`;
+  }
 }
+
+handleResize();
+
+window.addEventListener("resize", handleResize);
 
 // GSAP Animation
 
