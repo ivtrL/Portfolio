@@ -1,9 +1,13 @@
 "use client";
 
+import TwitterIcon from "@mui/icons-material/Twitter";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
 import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
-import Icons from "./Icons";
 import { motion } from "framer-motion";
 
 interface ICustomLink extends LinkProps {
@@ -12,7 +16,7 @@ interface ICustomLink extends LinkProps {
 }
 
 const CustomLink = (props: ICustomLink) => {
-  const router = useRouter();
+  const router = usePathname();
 
   const { href, title, className, ...restProps } = props;
 
@@ -20,8 +24,8 @@ const CustomLink = (props: ICustomLink) => {
     <Link href={href} {...restProps} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-px inline-block w-full bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
-          router.prefetch === href ? "w-full" : "w-0"
+        className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+          router === href ? "w-full" : "w-0"
         }`}
       >
         &nbsp;
@@ -48,7 +52,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mr-3"
         >
-          <Icons.twitter className="w-full h-auto" />
+          <TwitterIcon className="w-full h-auto" />
         </motion.a>
         <motion.a
           href="/#"
@@ -57,7 +61,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <Icons.github className="w-full h-auto" />
+          <GitHubIcon className="w-full h-auto" />
         </motion.a>
         <motion.a
           href="/#"
@@ -66,7 +70,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <Icons.linkedin className="w-full h-auto" />
+          <LinkedInIcon className="w-full h-auto" />
         </motion.a>
         <motion.a
           href="/#"
@@ -75,7 +79,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-6 ml-3"
         >
-          <Icons.instagram className="w-full h-auto" />
+          <InstagramIcon className="w-full h-auto" />
         </motion.a>
       </nav>
 
