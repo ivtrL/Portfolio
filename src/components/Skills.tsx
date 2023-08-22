@@ -33,20 +33,20 @@ const Skills = () => {
           className="flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark"
           whileHover={{ scale: 1.05 }}
         >
-          Web
+          Dev
         </motion.div>
 
-        <Skill name="HTML" x="-25vw" y="2vw" />
-        <Skill name="CSS" x="-5vw" y="-10vw" />
-        <Skill name="Javascript" x="20vw" y="6vw" />
-        <Skill name="React" x="0vw" y="12vw" />
-        <Skill name="NextJS" x="-20vw" y="-15vw" />
+        <Skill name="HTML" x="-20vw" y="2vw" />
+        <Skill name="CSS" x="-5vw" y="-5vw" />
+        <Skill name="Javascript" x="19vw" y="4vw" />
+        <Skill name="React" x="0vw" y="9vw" />
+        <Skill name="NextJS" x="0vw" y="-9vw" />
         <Skill name="Java" x="15vw" y="-12vw" />
-        <Skill name="Python" x="32vw" y="-5vw" />
-        <Skill name="MySQL" x="0vw" y="-20vw" />
-        <Skill name="C++" x="-25vw" y="18vw" />
-        <Skill name="Tailwind CSS" x="18vw" y="18vw" />
-        <Skill name="Firebase" x="-5vw" y="20vw" />
+        <Skill name="Python" x="-15vw" y="12vw" />
+        <Skill name="MySQL" x="0vw" y="-18vw" />
+        <Skill name="C++" x="-15vw" y="-12vw" />
+        <Skill name="Tailwind CSS" x="10vw" y="0vw" />
+        <Skill name="Firebase" x="9vw" y="17vw" />
       </div>
     </>
   );
