@@ -1,98 +1,262 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>Portfolio</title>
-      <link href="./css/base.css" rel="stylesheet">
-      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css?_cacheOverride=1678828602070" rel="stylesheet">
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css?_cacheOverride=1678828602070"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    <div class="navegação">
-      <div class="logo">
-        <span class="logo-nome">Isaac Vitorino</span>
+    <header class="hide">
+      <div class="navbar contentSpacing">
+        <span class="nav-logo">ISAAC VITORINO</span>
+        <nav class="nav-items">
+          <a href="#home" class="nav-link">
+            <span class="nav-name">Início</span>
+          </a>
+          <a href="#about" class="nav-link">
+            <span class="nav-name">Sobre Mim</span>
+          </a>
+          <a href="#knowledge" class="nav-link">
+            <span class="nav-name">Conhecimentos</span>
+          </a>
+          <a href="#projects" class="nav-link">
+            <span class="nav-name">Projetos</span>
+          </a>
+        </nav>
       </div>
-  
-      <nav class="nav-items">
-        <a href="#home" class="nav_link nav_link-off">
-            <i class="bx bx-home-alt-2"></i>
-            <span class="nav-nome"> Início</span>
-        </a>
-        <a href="#profile" class="nav_link nav_link-off">
-          <i class="bx bx-user"></i>
-          <span class="nav-nome"> Meu Perfil</span>
-        </a>
-
-        <a href="#" class="nav_link nav_link-off">
-          <i class="bx bx-notepad"></i>
-          <span class="nav-nome"> Projetos</span>
-        </a>
-
-        <a href="#" class="nav_link nav_link-off">
-          <i class="bx bxs-grid"></i>
-          <span class="nav-nome"> Habilidades</span>
-        </a>
-      </nav> 
-    </div>
-    <main>
-      <section id="home">
-        <div class="animate home">
-          <div class="d-container">
-            <p class="h-description">
-              Aqui você tem informações sobre 
-              todos os projetos que eu trabalhei 
-              e as minhas habilidades.
-            </p>
-          </div>
-          <h1 class="h-title">BEM-VINDO AO<span class="h-title-special"> PORTFÓLIO</span></h1>
+    </header>
+    <section id="home">
+      <main>
+        <div class="vignette hide"></div>
+        <img
+          src="img/parallax/background.png"
+          data-speedx="0.3"
+          data-speedy="0.2"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="-200"
+          class="parallax bg-img"
+        />
+        <img
+          src="img/parallax/fog_7.png"
+          data-speedx="0.27"
+          data-speedy="0.32"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="850"
+          class="parallax fog-7"
+        />
+        <img
+          src="img/parallax/mountain_10.png"
+          data-speedx="0.195"
+          data-speedy="0.305"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="1100"
+          class="parallax mountain-10"
+        />
+        <img
+          src="img/parallax/fog_6.png"
+          data-speedx="0.25"
+          data-speedy="0.28"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="1400"
+          class="parallax fog-6"
+        />
+        <img
+          src="img/parallax/mountain_9.png"
+          data-speedx="0.125"
+          data-speedy="0.155"
+          data-speedz="0.15"
+          data-rotation="0.02"
+          data-distance="1700"
+          class="parallax mountain-9"
+        />
+        <img
+          src="img/parallax/mountain_8.png"
+          data-speedx="0.1"
+          data-speedy="0.11"
+          data-speedz="0"
+          data-rotation="0.02"
+          data-distance="1800"
+          class="parallax mountain-8"
+        />
+        <img
+          src="img/parallax/fog_5.png"
+          data-speedx="0.16"
+          data-speedy="0.105"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="1900"
+          class="parallax fog-5"
+        />
+        <img
+          src="img/parallax/mountain_7.png"
+          data-speedx="0.1"
+          data-speedy="0.1"
+          data-speedz="0"
+          data-rotation="0.09"
+          data-distance="2000"
+          class="parallax mountain-7"
+        />
+        <div
+          data-speedx="0.07"
+          data-speedy="0.07"
+          data-speedz="0"
+          data-rotation="0.11"
+          data-distance="0"
+          class="text parallax"
+        >
+          <h2>Isaac</h2>
+          <h1>Vitorino</h1>
         </div>
-      </section>
-      <section id="profile">
-        <div class="animate profile">
-          <div class="profile-container">
-            <img src="/img/x.jpg" alt="#"/>
-            <span class="profile-description"></span>
-            <div class="contacts">
-              <a href="#" class="ctt-email">
-                <i class="bx bx-envelope"></i>
-              </a>
-              <a href="#" class="ctt-instagram">
-                <i class="bx bxl-instagram"></i>
-              </a>
-              <a href="#" class="ctt-facebook">
-                <i class="bx bxl-facebook"></i>
-              </a>
-              <a href="#" class="ctt-github">
-                <i class="bx bxl-github"></i>
-              </a>
-              <a href="#" class="ctt-whatsapp">
-                <i class="bx bxl-whatsapp"></i>
-              </a>
-              <a href="#" class="ctt-linkedin">
-                <i class="bx bxl-linkedin"></i>
-              </a>
-            </div>
-          </div>
+        <img
+          src="img/parallax/mountain_6.png"
+          data-speedx="0.065"
+          data-speedy="0.05"
+          data-speedz="0.05"
+          data-rotation="0.12"
+          data-distance="2300"
+          class="parallax mountain-6"
+        />
+        <img
+          src="img/parallax/fog_4.png"
+          data-speedx="0.135"
+          data-speedy="0.04"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="2400"
+          class="parallax fog-4"
+        />
+        <img
+          src="img/parallax/mountain_5.png"
+          data-speedx="0.08"
+          data-speedy="0.03"
+          data-speedz="0.13"
+          data-rotation="0"
+          data-distance="2550"
+          class="parallax mountain-5"
+        />
+        <img
+          src="img/parallax/fog_3.png"
+          data-speedx="0.11"
+          data-speedy="0.018"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="2800"
+          class="parallax fog-3"
+        />
+        <img
+          src="img/parallax/mountain_4.png"
+          data-speedx="0.059"
+          data-speedy="0.024"
+          data-speedz="0.35"
+          data-rotation="0.14"
+          data-distance="3200"
+          class="parallax mountain-4"
+        />
+        <img
+          src="img/parallax/mountain_3.png"
+          data-speedx="0.04"
+          data-speedy="0.018"
+          data-speedz="0.32"
+          data-rotation="0.05"
+          data-distance=" 3400"
+          class="parallax mountain-3"
+        />
+        <img
+          src="img/parallax/fog_2.png"
+          data-speedx="0.15"
+          data-speedy="0.0115"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="3600"
+          class="parallax fog-2"
+        />
+        <img
+          src="img/parallax/mountain_2.png"
+          data-speedx="0.0235"
+          data-speedy="0.013"
+          data-speedz="0.42"
+          data-rotation="0.15"
+          data-distance="3800"
+          class="parallax mountain-2"
+        />
+        <img
+          src="img/parallax/mountain_1.png"
+          data-speedx="0.027"
+          data-speedy="0.018"
+          data-speedz="0.53"
+          data-rotation="0.2"
+          data-distance="4000"
+          class="parallax mountain-1"
+        />
+        <img src="img/parallax/sun_rays.png" class="sun-rays hide" />
+        <img src="img/parallax/black_shadow.png" class="black-shadow hide" />
+        <img
+          src="img/parallax/fog_1.png"
+          data-speedx="0.12"
+          data-speedy="0.01"
+          data-speedz="0"
+          data-rotation="0"
+          data-distance="4200"
+          class="parallax fog-1"
+        />
+      </main>
+      <div class="home-container contentSpacing">
+        <div class="home-text">
+          <h1 class="title">BEM VINDO AO MEU PORTFÓLIO!</h1>
+          <h2 class="subtitle">FULLSTACK DEVELOPER</h2>
+          <p class="description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+            eius ratione unde molestiae delectus, voluptatibus qui ea fugiat id
+            eligendi dolorum tempore similique impedit fugit velit temporibus
+            aperiam debitis earum!rem
+          </p>
         </div>
-      </section>
-      <section id="projects">
-        <div class="projects">
-          <div class="projects-container">
-            <h1 class="projects-h">
-              Meus Projetos:
-            </h1>
-            <p class="projects-p">
-              A maioria dos meus projetos, se não todos,
-              que trabalhei e ou estou trabalhando estão
-              no repositório do meu github, incluindo este
-              próprio site. Busco sempre criar aplicações 
-              que são capazes de resolver problemas do 
-              cotidiano e ou da área profissional.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <script type="module" src="./js/main.js"></script>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-container contentSpacing">
+        <h1>SOBRE MIM</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          porro ad beatae cupiditate dolorum harum qui, amet omnis, explicabo
+          inventore dolores odio exercitationem fugiat quasi accusamus ex
+          eveniet expedita illum?
+        </p>
+      </div>
+    </section>
+    <section id="knowledge">
+      <div class="knowledge-container contentSpacing">
+        <h1>CONHECIMENTOS</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          porro ad beatae cupiditate dolorum harum qui, amet omnis, explicabo
+          inventore dolores odio exercitationem fugiat quasi accusamus ex
+          eveniet expedita illum?
+        </p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects-container contentSpacing">
+        <h1>PROJETOS</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          porro ad beatae cupiditate dolorum harum qui, amet omnis, explicabo
+          inventore dolores odio exercitationem fugiat quasi accusamus ex
+          eveniet expedita illum?
+        </p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/gsap.min.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,59 @@
+/* Navigation Bar */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.45s ease;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1rem;
+  /* border-bottom: 1px solid var(--primary-color); */
+}
+
+.nav-logo {
+  color: var(--primary-color);
+  pointer-events: none;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  color: var(--primary-color);
+}
+.active {
+  color: var(--secondary-color);
+}
+
+.nav-link::after {
+  width: 0;
+}
+
+.nav-link::after,
+.active::after {
+  transition: 0.2s;
+  height: 2px;
+  content: "";
+  background-color: var(--secondary-color);
+}
+
+.nav-link:hover .nav-name {
+  color: var(--secondary-color);
+}
+
+.nav-link:hover::after,
+.active::after {
+  width: 100%;
+}

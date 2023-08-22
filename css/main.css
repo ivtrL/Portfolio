@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;800&display=swap");
+@import "animations.css";
+@import "navbar.css";
+@import "homeContainer.css";
+@import "homeStart.css";
+
+/* Content Organization */
+
+@media screen and (max-width: 1239px) {
+  :root {
+    --primary-font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  :root {
+    --primary-font-size: 1.25rem;
+  }
+}
+
+:root {
+  --primary-color: hsl(236, 53%, 25%);
+  --secondary-color: hsl(236, 53%, 50%);
+  --background-color: hsl(255, 100%, 97%);
+  --header-color: hsl(255, 100%, 96%);
+  --box-shadow-color: hsla(0, 0%, 0%, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: black;
+  font-size: var(--primary-font-size);
+  scroll-behavior: smooth;
+  transition: 0.2s;
+  overflow-x: hidden;
+}
+
+.contentSpacing {
+  margin: 0 auto;
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100vw;
+  overflow: hidden;
+  min-height: calc(100vh + 100px);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
