@@ -9,6 +9,7 @@ import Link, { LinkProps } from "next/link";
 import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 import { motion } from "framer-motion";
+import ThemeButton from "./DarkMode/ThemeButton";
 
 interface ICustomLink extends LinkProps {
   title?: string;
@@ -77,10 +78,17 @@ const Navbar = () => {
           target="_blank"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
-          className="w-6 ml-3"
+          className="w-6 mx-3"
         >
           <InstagramIcon className="w-full h-auto" />
         </motion.a>
+        <motion.div
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 ml-3"
+        >
+          <ThemeButton />
+        </motion.div>
       </nav>
 
       <div className="absolute left-1/2 top-2 -translate-x-1/2">
