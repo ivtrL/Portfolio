@@ -3,6 +3,7 @@ import type { Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
+  darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,6 +26,8 @@ const config: Config = {
       backgroundImage: {
         circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 5px, #f5f5f5 100px)",
+        circularDark:
+          "repeating-radial-gradient(rgba(255,255,255,1) 2px, rgba(0,0,0,0) 5px, rgba(0,0,0,0) 100px)",
       },
     },
   },

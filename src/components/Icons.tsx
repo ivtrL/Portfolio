@@ -1,3 +1,5 @@
+import { Sun, Moon, Laptop } from "lucide-react";
+
 interface ICircularText extends React.HTMLAttributes<SVGSVGElement> {}
 
 const CircularText = (props: ICircularText) => (
@@ -11,4 +13,10 @@ const CircularText = (props: ICircularText) => (
   </svg>
 );
 
-export { CircularText };
+const Icons = {
+  sun: Sun,
+  moon: Moon,
+  laptop: Laptop,
+};
+
+export { CircularText, Icons };
