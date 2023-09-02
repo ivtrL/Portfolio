@@ -1,12 +1,12 @@
 "use client";
 
-import AnimatedText from "@/components/AnimatedText";
+import AnimatedText from "@/src/components/AnimatedText";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import Layout from "@/components/Layout";
+import Layout from "@/src/components/Layout";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
-import project1 from "@/../public/images/projects/project-1.png";
+import project1 from "@/public/images/projects/project-1.png";
 
 interface IFeaturedProject {
   type: string;

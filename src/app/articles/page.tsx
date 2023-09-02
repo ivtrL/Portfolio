@@ -1,5 +1,5 @@
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/src/components/AnimatedText";
+import Layout from "@/src/components/Layout";
 import React from "react";
 
 const ArticlesPage = () => {

@@ -2,14 +2,14 @@ import IosShareIcon from "@mui/icons-material/IosShare";
 import Image from "next/image";
 import Link from "next/link";
 
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
-import HireMe from "@/components/HireMe";
-import lightBulb from "@/../public/images/lightbulb.svg";
+import AnimatedText from "@/src/components/AnimatedText";
+import Layout from "@/src/components/Layout";
+import HireMe from "@/src/components/HireMe";
+import lightBulb from "@/public/images/lightbulb.svg";
 
 export default function Home() {
   return (
-    <main className="flex items-center text-dark w-full min-h-screen">
+    <main className="flex items-center dark:text-light text-dark w-full min-h-screen">
       <Layout className="pt-0">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">

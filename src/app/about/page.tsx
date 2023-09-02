@@ -1,13 +1,13 @@
 "use client";
 
-import AnimatedText from "@/components/AnimatedText";
-import Layout from "@/components/Layout";
+import AnimatedText from "@/src/components/AnimatedText";
+import Layout from "@/src/components/Layout";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import profilePic from "@/../public/images/profile/developer-pic-2.jpg";
+import profilePic from "@/public/images/profile/developer-pic-2.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-import Skills from "@/components/Skills";
-import Education from "@/components/Education";
+import Skills from "@/src/components/Skills";
+import Education from "@/src/components/Education";
 
 const AnimatedNumber = ({ value }: { value: number }) => {
   const ref = useRef<HTMLSpanElement>(null);
@@ -75,7 +75,7 @@ const AboutPage = () => {
               <span className="inline-block text-7xl font-bold">
                 <AnimatedNumber value={100} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+              <h2 className="text-xl font-medium capitalize dark:text-light/75 text-dark/75">
                 commits on github
               </h2>
             </div>
@@ -83,7 +83,7 @@ const AboutPage = () => {
               <span className="inline-block text-7xl font-bold">
                 <AnimatedNumber value={10} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+              <h2 className="text-xl font-medium capitalize dark:text-light/75 text-dark/75">
                 repositories
               </h2>
             </div>
@@ -91,7 +91,7 @@ const AboutPage = () => {
               <span className="inline-block text-7xl font-bold">
                 <AnimatedNumber value={2} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75">
+              <h2 className="text-xl font-medium capitalize dark:text-light/75 text-dark/75">
                 years working on projects
               </h2>
             </div>
