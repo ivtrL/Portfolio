@@ -7,6 +7,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import project1 from "@/public/images/projects/project-1.png";
+import { Button } from "@/src/components/Button";
 
 interface IFeaturedProject {
   type: string;
@@ -20,8 +21,8 @@ interface IFeaturedProject {
 const FeaturedProject = (props: IFeaturedProject) => {
   const { type, title, summary, img, link, github } = props;
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-full h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-slate-950 shadow-2xl p-12 relative rounded-br-2xl">
+      <div className="absolute top-0 -right-3 -z-10 w-full h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -38,18 +39,22 @@ const FeaturedProject = (props: IFeaturedProject) => {
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold ">{title}</h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light/90">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <GitHubIcon className="w-full scale-150" />
           </Link>
-          <Link
-            href={link}
-            target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
-          >
-            Visit Project
-          </Link>
+          <Button className="ml-4">
+            <Link
+              href={link}
+              target="_blank"
+              className="p-2 px-6 text-lg font-semibold"
+            >
+              Visit Project
+            </Link>
+          </Button>
         </div>
       </div>
     </article>
@@ -68,8 +73,8 @@ const Project = (props: IProject) => {
   const { title, type, img, link, github } = props;
 
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:border-light dark:bg-slate-950 p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"

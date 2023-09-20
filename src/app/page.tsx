@@ -44,7 +44,7 @@ export default function Home() {
               <Link
                 href="/mailto:isaacvitorinola@gmail.com"
                 target="_blank"
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                className="ml-4 text-lg font-medium capitalize text-dark dark:text-light underline"
               >
                 Contact Me
               </Link>

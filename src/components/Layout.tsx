@@ -7,7 +7,7 @@ const Layout = (props: ILayout) => {
 
   return (
     <div
-      className={`w-full h-full inline-block z-0 bg-light dark:bg-slate-950 p-32 ${className}`}
+      className={`w-full h-full inline-block p-32 ${className}`}
       {...restProps}
     />
   );

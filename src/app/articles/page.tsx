@@ -1,5 +1,6 @@
 import AnimatedText from "@/src/components/AnimatedText";
 import Layout from "@/src/components/Layout";
+import ParticlesButton from "@/src/components/Particles/ParticlesButton";
 import React from "react";
 
 const ArticlesPage = () => {
@@ -15,6 +16,7 @@ const ArticlesPage = () => {
           While it does not have anything I will be using this page to display
           my creativity and some of my knowledge of JS libraries.
         </p>
+        <ParticlesButton />
       </Layout>
     </main>
   );

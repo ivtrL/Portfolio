@@ -4,6 +4,7 @@ import { Montserrat } from "next/font/google";
 import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
 import ThemeProvider from "@/src/components/DarkMode/ThemeProvider";
+import { ParticlesProvider } from "../components/Particles/ParticlesProvider";
 
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-mont" });
 
@@ -19,13 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body
-          className={`${montserrat.variable} font-mont dark:bg-slate-950 bg-light w-full min-h-screen`}
-        >
-          <Navbar />
-          {children}
-          <Footer />
-        </body>
+        <ParticlesProvider>
+          <body
+            className={`${montserrat.variable} font-mont dark:bg-slate-950 bg-light w-full min-h-screen`}
+          >
+            <Navbar />
+            {children}
+            <Footer />
+          </body>
+        </ParticlesProvider>
       </ThemeProvider>
     </html>
   );
