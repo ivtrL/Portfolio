@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  useCallback,
-  ContextType,
-  createContext,
-  useState,
-  Suspense,
-} from "react";
+import { useCallback, ContextType, createContext, useState } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
@@ -42,17 +36,15 @@ export function ParticlesProvider(props: IParticlesProvider) {
 
   return (
     <ParticlesContext.Provider value={{ particlesOn, ToggleParticles }}>
-      <Suspense>
-        {particlesOn && (
-          <Particles
-            id="tsparticles"
-            className="fixed -z-50"
-            options={particles_hash.normal_dark2}
-            init={particlesInit}
-            loaded={particlesLoaded}
-          />
-        )}
-      </Suspense>
+      {particlesOn && (
+        <Particles
+          id="tsparticles"
+          className="fixed -z-50"
+          options={particles_hash.normal_dark2}
+          init={particlesInit}
+          loaded={particlesLoaded}
+        />
+      )}
       {children}
     </ParticlesContext.Provider>
   );
