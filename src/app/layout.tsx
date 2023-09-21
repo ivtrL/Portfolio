@@ -20,15 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ThemeProvider>
-        <body
-          className={`${montserrat.variable} font-mont dark:bg-slate-950 bg-light w-full min-h-screen`}
-        >
-          <ParticlesProvider>
+        <ParticlesProvider>
+          <body
+            className={`${montserrat.variable} font-mont dark:bg-slate-950 bg-light w-full min-h-screen`}
+          >
             <Navbar />
             {children}
             <Footer />
-          </ParticlesProvider>
-        </body>
+          </body>
+        </ParticlesProvider>
       </ThemeProvider>
     </html>
   );
