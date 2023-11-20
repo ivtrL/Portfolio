@@ -8,6 +8,7 @@ import type { Container, Engine } from "tsparticles-engine";
 interface IParticlesContext {
   particlesOn?: boolean;
   ToggleParticles?: () => void;
+  DisableParticles?: () => void;
 }
 
 export const ParticlesContext = createContext<IParticlesContext>({});
@@ -24,6 +25,10 @@ export function ParticlesProvider(props: IParticlesProvider) {
     setParticlesOn((prev) => (prev ? false : true));
   }
 
+  function DisableParticles() {
+    setParticlesOn(false);
+  }
+
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
@@ -34,7 +39,9 @@ export function ParticlesProvider(props: IParticlesProvider) {
   );
 
   return (
-    <ParticlesContext.Provider value={{ particlesOn, ToggleParticles }}>
+    <ParticlesContext.Provider
+      value={{ particlesOn, ToggleParticles, DisableParticles }}
+    >
       {particlesOn && (
         <Particles
           id="tsparticles"

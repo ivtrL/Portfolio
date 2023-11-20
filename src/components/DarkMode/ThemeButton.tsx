@@ -1,7 +1,9 @@
 "use client";
 
+import { useContext } from "react";
 import { useTheme } from "next-themes";
 
+import { ParticlesContext } from "@/src/components/Particles/ParticlesProvider";
 import { Button } from "@/src/components/Button";
 import {
   DropdownMenu,
@@ -13,6 +15,7 @@ import { Icons } from "@/src/components/Icons";
 
 const ThemeButton = () => {
   const { theme, setTheme } = useTheme();
+  const { particlesOn, DisableParticles } = useContext(ParticlesContext);
 
   return (
     <DropdownMenu>
@@ -24,17 +27,31 @@ const ThemeButton = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("light");
+            if (typeof DisableParticles === "function" && particlesOn)
+              DisableParticles();
+          }}
+        >
           <Icons.sun className="mr-2 h-4 w-4" />
           <span>Light</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem
+          onClick={() => {
+            setTheme("dark");
+            if (typeof DisableParticles === "function" && particlesOn)
+              DisableParticles();
+          }}
+        >
           <Icons.moon className="mr-2 h-4 w-4" />
           <span>Dark</span>
         </DropdownMenuItem>
         <DropdownMenuItem
           onClick={() => {
             setTheme("system");
+            if (typeof DisableParticles === "function" && particlesOn)
+              DisableParticles();
           }}
         >
           <Icons.laptop className="mr-2 h-4 w-4" />
